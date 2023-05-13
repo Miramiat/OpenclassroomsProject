@@ -273,10 +273,7 @@ font-size: 17px;
 
 
 
-.fa-ux:hover{
-  -webkit-background-clip: yellow;
 
-}
 input[type="checkbox"] {
 	display: none;
   }
@@ -356,8 +353,10 @@ input[type="checkbox"] {
         display: none;
         }
   
-  .fa-heart{
-    color: #9356DC;
+  .fa-sharp:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
+    
     
   
   font-size: 1.2em;
