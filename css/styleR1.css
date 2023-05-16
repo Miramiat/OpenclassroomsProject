@@ -9,7 +9,7 @@
   }
     body {
       position: relative;     
-      max-width: 1024px;     
+      max-width: 1023px;     
   }
   main{
     font-family: 'Roboto', sans-serif; 
@@ -70,37 +70,49 @@
     line-height: 41px;
 /* Black */
 color: #101010;
- }
- input[type="checkbox"] {
-	display: none;
-  }  
-  label {
-	display: inline-block;
-	cursor: pointer;
-  }  
-  label i {
-	display: none;
+}
+
+.heart-icons {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
   }
   
-  #heart-checkbox:checked + label i.fa-regular {
-	display: none;
+  .heart-icons i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   }
   
-  #heart-checkbox:checked + label i.fa-solid {
-	display: inline-block;
+  .heart-icons .fa-regular.fa-heart {
+  color: black;
   }
   
-  #heart-checkbox:not(:checked) + label i.fa-regular {
-	display: inline-block;
+  .heart-icons .fa-solid.fa-heart {
+  color: transparent;
+  transition: all 0.2s;
   }
   
-  #heart-checkbox:not(:checked) + label i.fa-solid {
-	display: none;
+  .heart-icons:hover .fa-regular.fa-heart {
+  opacity: 0;
+  }
+  .heart-icons:hover .fa-solid.fa-heart {
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text; /* pour appliquer le dégradé seulement sur les parties textuelles de l'icône */
+  -webkit-background-clip: text; /* pour une compatibilité avec les anciennes versions de navigateurs Webkit */
+  -webkit-text-fill-color: transparent; /* pour masquer la couleur du texte de l'icône */
+  transition: all 0.2s;
+  }
+  
+  .fa-heart{
+  font-size: 1.3em;
   }
 
  .entrees{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -112,7 +124,7 @@ color: #101010;
  }
  .trais{
     height: 3px;
-    width: 40px;
+    width: 43px;
     background-color: #99E2D0;
     margin-top: 5px;
     margin-left: 20px;
@@ -130,14 +142,47 @@ justify-content: left;
  .B-3-4:hover{
   position: relative;
 
+  & .price{
+    margin-right: 50px; 
+  }
+
   & .B-4{
     opacity: 1;
 
   }
  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  text-align: right;
+}
+.description{
+  width: 287px;
+  height: 19px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15.0431px;
+  line-height: 18px;
+  
+  color: #000000;
+
+}
+
+span{
+  display: flex;
+  justify-content: end;
+
+} 
+
 
 .B-4{
-  width: 45px;
+  width: 55px;
   height: 72px;
   display: flex;
   background-color: #99E2D0;
@@ -167,51 +212,20 @@ justify-content: left;
   border-radius: 15.0431px;
 
  }
- /*.B-3:hover{
-  width: 87%;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: start;
-  margin-left: 13px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  padding: 10px;
-}
-*/
- .B-3 h4{
-  font-family: 'Roboto';
-  
-  font-style: normal;
+ h4{
+
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   text-align: left;
  }
- .entree{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15.0431px;
-  text-align: left;
-  line-height: 18px;
-  color: #000000;
-  padding-top: 0px;
- }
-span{
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 700;
-  margin-left: 25px;
-} 
+
+
 p .fa-circle-check{
   color: #4ebdd0;
   text-align: center;
   margin-top: 24px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-size: 1.3em;
   background-clip: text;
   -webkit-text-fill-color: #ffffff;
@@ -230,14 +244,11 @@ article{
   border: none;
   width: 186px;
   height: 50px;
-  margin-left: 100px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  text-align: center;
   /* White */
   color: #FFFFFF;
 }
@@ -248,6 +259,9 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 border-radius: 25px;
   
 }
+
+
+
 footer{
   flex-direction: column;
   align-items: flex-start;
@@ -269,8 +283,7 @@ footer h4{
 footer h5{
   left: 22px;
   top: calc(50% - 19px/2 - 40px);
-  font-family: 'Roboto';
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -287,6 +300,90 @@ footer p{
 footer i{
   margin-right: 7px;
 }
+
+
+@media only screen and (min-width : 1024px){ 
+  html {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body{
+    width: 100%;
+  }
+
+  #im{
+    width: 100%;
+    
+      background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   
+height: 500px;
+left: 0px;
+top: -400.48px;
+} 
+section h2{
+  margin-right: 30px;
+} 
+
+
+     
+    
+
+  
+
+.paletteDuGout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*  width: calc(100%- 386px)*/
+}
+.B-3{
+  width: 634px;
+}
+
+.B-4{
+  margin-left: -50px;
+
+width: 59px;
+height: 72px;
+
+/* Green */
+
+background: #99E2D0;
+border-radius: 0px 15px 15px 0px;
+  
+}
+p .fa-circle-check{
+  margin-top: 24px;
+  margin-left: 17px;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+}
+
+footer{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 60px;
+  width: 100%;
+} 
+#bas-de-page{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}  
+  }
 
 
 
