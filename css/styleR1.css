@@ -36,44 +36,44 @@
     /* Black */
     color:  #000000;
   }
- .banner1 {
+.banner1 {
   height: 275px; /* Ajustez la hauteur selon vos besoins */
-  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
-  background-position-y: center;
+  background-position: center;
 }
 .banner2 {
   height: 275px; /* Ajustez la hauteur selon vos besoins */
   background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
-  background-position-y: center;
+  background-position: center;
 }
 .banner3 {
   height: 275px; /* Ajustez la hauteur selon vos besoins */
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
-  background-position-y: center;
+  background-position: center;
 }
 .banner4 {
   height: 275px; /* Ajustez la hauteur selon vos besoins */
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
-  background-position-y: center;
+  background-position: center;
 }
- .paletteDuGout{
+.paletteDuGout{
   position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
-    margin-bottom: 0px;
-    background: #F7F7F7;
-    border-top-left-radius: 40px;
-    border-top-right-radius:40px ;
-    padding-top: 30px;
-    margin-top: -70px;
-    padding-left: 0;
-    padding-right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  background: #F7F7F7;
+  border-top-left-radius: 40px;
+  border-top-right-radius:40px ;
+  padding-top: 30px;
+  margin-top: -70px;
+  padding-left: 0;
+  padding-right: 0;
  }
  .palette{
     display: flex;
