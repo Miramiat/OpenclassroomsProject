@@ -37,11 +37,35 @@
     color:  #000000;
   }
  #im{
+  width: 100%;
     background-repeat: no-repeat;  
     height: 275px;
-    background-size: contain;
+    background-size: cover;
     background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
  }
+ #im1{
+  width: 100%;
+  background-repeat: no-repeat;  
+  height: 275px;
+  background-size: cover;
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+#im2{
+  /*background-image: url(https://images.unsplash.com/photo-1585144570839-e429bb95ffb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1147&q=80);*/
+  background-image: url(../images/restaurants/louihansel-bis.jpg);
+  width: 100%;
+  background-repeat: no-repeat;  
+  height: 275px;
+  background-size: cover;
+  
+}
+#im3{
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 275px;
+  background-size: cover;
+}
  .paletteDuGout{
     width: 100%;
     display: flex;
@@ -234,9 +258,8 @@ article{
   margin-bottom: 30px;
 } 
 .B-5{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  text-align: center;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 /* Shadow/Button */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -244,8 +267,6 @@ article{
   border: none;
   width: 186px;
   height: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -314,55 +335,52 @@ footer i{
   }
 
   #im{
-    width: 100%;
-    
+      width: 100%;    
       background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
    
-height: 500px;
-left: 0px;
-top: -400.48px;
+      height: 500px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
+}
+#im1{
+  width: 100%;
+    
+      background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 400px;
 } 
 section h2{
   margin-right: 30px;
 } 
-
-
-     
-    
-
-  
-
 .paletteDuGout{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-
   width: 80%;
+  margin-top: -35px;
   margin-left: auto;
   margin-right: auto;
-
   /*  width: calc(100%- 386px)*/
 }
 .B-3{
   width: 634px;
 }
-
 .B-4{
   margin-left: -50px;
-
-width: 59px;
-height: 72px;
-
-/* Green */
-
-background: #99E2D0;
-border-radius: 0px 15px 15px 0px;
-  
+  width: 59px;
+  height: 72px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;  
 }
 p .fa-circle-check{
   margin-top: 24px;
@@ -370,7 +388,6 @@ p .fa-circle-check{
   background-clip: text;
   -webkit-text-fill-color: #ffffff;
 }
-
 footer{
   display: flex;
   flex-direction: row-reverse;
