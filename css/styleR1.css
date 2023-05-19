@@ -158,18 +158,17 @@ color: #101010;
 justify-content: left;
   align-items: normal; 
  }
- .B-3-4:hover{
+ .B-3-4:hover {
   position: relative;
-
-  & .price{
-    margin-right: 50px; 
   }
-
-  & .B-4{
-    opacity: 1;
-
+  
+  .B-3-4:hover .price {
+  margin-right: 50px;
   }
- }
+  
+  .B-3-4:hover .B-4 {
+  opacity: 1;
+  }
 .container {
   display: flex;
   justify-content: space-between;
