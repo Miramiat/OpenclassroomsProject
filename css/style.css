@@ -302,6 +302,23 @@ transition: all 0.2s;
 .fa-heart{
 font-size: 1.2em;
 }
+    .loader {
+      border: 8px solid #9356DC; /* Couleur de la bordure */
+      border-top: 8px solid #99E2D0; /* Couleur de la bordure du dessus */
+      border-radius: 50%; /* Forme du cercle */
+      width: 60px; /* Largeur */
+      height: 60px; /* Hauteur */
+      animation: spin 2s linear infinite; /* Animation de rotation */
+      margin: 30px auto; /* Marge pour centrer */
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); } /* Début de l'animation */
+      100% { transform: rotate(360deg); } /* Fin de l'animation */
+    }
+    
+
+
 
 
 footer{
