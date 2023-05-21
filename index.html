@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-mise-a-jour.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -19,9 +18,13 @@
   </div>
     <header><div><h1>ohmyfood</h1></div></header>
     <main>
-        <div class="position">
-            <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
-        </div>
+      <nav class="nav-bar">
+        <!-- recherche par ville -->
+        <form class="search-bar">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" class="bold" id="search" placeholder="Paris, Belleville">
+        </form>      
+      </nav>
         <section class="reserver">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
@@ -124,7 +127,7 @@
     <h5><i class="fa-solid fa-utensils "></i>Proposer un restaurant</h5>
     <h5><i class="fa-solid fa-handshake-angle "></i>Devenir partenaire</h5>
     <p>Mentions légales</p>
-    <p>Contact</p>
+    <a href="mailto:monadresseemail@oc.com" class="contact-button">Contact</a>
   </div>
 
 

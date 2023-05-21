@@ -5,14 +5,15 @@
 html {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 body {
-  position: relative;
-
-  max-width: 1024px;    
+  width: 100%;
+  max-width: 1023px; 
+  margin: 0;
+  padding: 0;   
 }
-
 #loader {
   position: fixed;
   top: 0;
@@ -24,7 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  animation: fadeOut 1s ease-in-out 3s forwards;
+  animation: fadeOut 1s ease-in-out 2s forwards;
 }
 .loader-circle {
   width: 50px;
@@ -56,11 +57,9 @@ body {
 
 
 main{
+  width: 100%;
   font-family: 'Roboto', sans-serif;  
 }
-
-
-
 header{
   width: 100%;
   height: 62.5px;
@@ -88,35 +87,41 @@ header h1{
 
   color:  #000000;
 }
-.position{
-  width: 100%;
-  height: 49.5px;
-  color: #353535;
+body .nav-bar .search-bar input {
+  border: none;
+  font-size: 1.3rem;
+
+  width: 200px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: #EAEAEA;
+}
+.nav-bar{
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  gap: 17px;
-
-  /* Grey 2 */
-  background: #EAEAEA;
+  gap: 20px;
+  background-color: #EAEAEA;
+  padding-top: 15px;
 }
-.position p{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-      /* identical to box height */
-      /* Grey */
+.fa-location-dot{
+  color: #353535;
+  font-size: 1.3em;
+
 }
 a{
   text-decoration: none;
   color: #000;
 }
-.fonc{
+a .fonc{
   width: 12px;
   height: 16px;
+  color: #7E7E7E;
+}
+a .fonc:hover{
+  color: #9356DC;
 }
 .reserver{
 
@@ -179,12 +184,14 @@ font-size: 16px;
 line-height: 19px;
 }
 .fuctioning{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .fonctionnement{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,35 +256,38 @@ line-height: 17px;
 
 color: #F7F7F7;
 }
-.restaurants{display: flex;
-flex-direction: column;
+.restaurants{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-margin-left: 18px;
-margin-right: 18px;
 }
 .restaurant{
 display: flex;
 flex-direction: column;
+justify-content: center;
 
 }
 .restaurants h2{
 text-align: left;
-margin-left: 20px;
+padding-left: 40px;
 } 
 .card{
-width: 100%;
 height: 251px;
 box-sizing: border-box;
-
 padding: 0px;
+margin-left: 15px;
+margin-right: 15px;
 margin-bottom: 20px;
-
-
 background: #FFFFFF;
 /* Shadow/Card */
-
 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 border-radius: 15px;
+
 }  
 .card-img{
 object-fit: cover;
@@ -354,7 +364,7 @@ flex-direction: column;
 align-items: flex-start;
 
 
-margin-top: 40px;
+
 width: 100%;
 padding: 30px 20px;
 
@@ -400,7 +410,7 @@ margin-top: 10px;
 
 color: #FFFFFF;
 }
-footer p{
+footer p, .contact-button{
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
@@ -417,8 +427,10 @@ html {
   flex-direction: column;
   align-items: center;
 }
-body{
+body{                     
   width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 .fonctionnement{
 display: flex;
@@ -430,7 +442,7 @@ width: 100%;
 .restaurants{display: flex;
 flex-direction: column;
 width: 100%;
-background: #F7F7F7;
+background: #F7F7F7;                                                       
 }
 .restaurant{
 display: flex;
