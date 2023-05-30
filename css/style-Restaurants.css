@@ -1,0 +1,334 @@
+header {
+  width: 100%;
+  height: 62.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+  position: relative;
+  height: 500px;
+  /* Ajustez la hauteur */
+  background-size: cover;
+  background-position: center;
+}
+
+.banner1 {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+}
+
+.banner2 {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.banner3 {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.banner4 {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.paletteDuGout {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  background: #F7F7F7;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 30px;
+  margin-top: -70px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section h2 {
+  font-family: 'Shrikhand';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  color: #101010;
+}
+
+.entrees {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 20px;
+  margin-top: 25px;
+}
+
+.trais {
+  height: 3px;
+  width: 43px;
+  background-color: #99E2D0;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.B-3-4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* Initialise l'opacité à 0 */
+  animation: fade-in 0.5s forwards;
+  /* Lance l'animation de fondu en 0.5s */
+  transition: opacity 1.4s ease-in-out;
+}
+
+.buttons .B-3-4:nth-child(1) {
+  animation-delay: 0.5s;
+  /* Ajoute un délai de 0.5s à la deuxième div */
+}
+
+.buttons .B-3-4:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.buttons .B-3-4:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
+.buttons .B-3-4:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.B-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+  width: 100%;
+  height: 72px;
+  border: none;
+  margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+
+.B-4 {
+  top: 0;
+  right: -12px;
+  /* La div est initialement hors de la vue */
+  opacity: 0;
+  /* La div est initialement transparente */
+  width: 68px;
+  height: 72px;
+  display: flex;
+  background-color: #99E2D0;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-left: -50px;
+  padding-top: 0px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transition: right 1s, opacity 1s;
+  /* Ajoute une transition de 0.5s pour right et opacity */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  text-align: right;
+}
+
+.description {
+  width: 287px;
+  height: 19px;
+  white-space: nowrap;
+  /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  /* Masque le texte débordant */
+  text-overflow: ellipsis;
+  /* Affiche des points de suspension */
+  font-weight: 300;
+  font-size: 15.0431px;
+  line-height: 18px;
+}
+
+span {
+  display: flex;
+  justify-content: end;
+}
+
+.B-3-4:hover {
+  position: relative;
+}
+
+.B-3-4:hover .price {
+  margin-right: 55px;
+}
+
+.B-3-4 .B-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.B-3-4:hover .B-4 {
+  /* Lorsqu'on survole la div, elle se déplace vers la gauche */
+  opacity: 1;
+  /* La div devient opaque */
+  margin-right: 40px;
+}
+
+.B-3-4:hover .description {
+  width: 200px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+
+p .fa-circle-check {
+  color: #4ebdd0;
+  text-align: center;
+  margin-top: 19px;
+  margin-left: 14px;
+  font-size: 2.1em;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.fa-circle-check {
+  display: inline-block;
+  position: relative;
+}
+
+.fa-circle-check:before {
+  content: "\f058";
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-circle-check:hover:before {
+  animation: rotate-animation 0.7s linear forwards;
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  section h2 {
+    margin-right: 30px;
+  }
+
+  .paletteDuGout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-top: -35px;
+    margin-left: auto;
+    margin-right: auto;
+    /*  width: calc(100%- 386px)*/
+  }
+
+  .B-3 {
+    width: 634px;
+  }
+
+  .B-4 {
+    margin-left: -55px;
+    width: 69px;
+  }
+
+  .B-3-4:hover .B-4 {
+    right: 0;
+    /* Lorsque vous survolez la div, elle se déplace vers la gauche */
+    opacity: 1;
+    /* La div devient opaque */
+    margin-right: 37px;
+  }
+
+  .B-3-4:hover .description {
+    width: 277px;
+  }
+
+  p .fa-circle-check {
+    margin-top: 21px;
+    margin-left: 17px;
+  }
+}

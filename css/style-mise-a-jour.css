@@ -1,7 +1,0 @@
-.loader {
-    /* styles du loader */
-    /* ... */
-    animation: spin 2s linear infinite;
-    animation-delay: 1s; /* délai de 1 seconde */
-  }
-  
